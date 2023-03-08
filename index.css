@@ -71,6 +71,22 @@ section {
     color: #ff79c6;   
 }
 
+button{
+    font-family: 'cascadia';
+    font-size: 15px;
+    padding: 10px;
+    color:#f8f8f2;
+    border: #bd93f9 solid 3px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor:pointer;
+    transition: all 0.8s;
+}
+
+button:hover{
+    transform:translateY(-5px);
+}
+
 #dracula{
     padding-top: 8%;
     padding-bottom: 8%;
@@ -146,6 +162,7 @@ section {
 
 .flip-container:hover .flipper{
 	transform: rotateY(180deg);
+
 }
 
 .flipper{
@@ -193,6 +210,11 @@ section {
     padding: 20px;
     margin: 20px;
     cursor:pointer;
+    transition: all 0.8s;
+}
+
+.card2:hover{
+    transform: translateY(-5px);
 }
 
 .card2 h2{
