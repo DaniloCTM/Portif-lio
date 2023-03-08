@@ -16,6 +16,7 @@ nav{
     overflow: hidden;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 nav #logo{
@@ -47,10 +48,6 @@ section {
     padding: 35px 0 20px 0;
     background-color: #44475a;
     height: 100v;
-}
-
-#menu1 {
-    
 }
 
 #name {
@@ -90,7 +87,6 @@ section {
 
 #menu2 {
     display: inline-block;
-
 }
 
 #menu2 h1{
@@ -107,13 +103,14 @@ section {
     font-size: 20px;
 }
 
-#menu3{
-
-}
-
 #menu3 h1{
     padding-left: 25%;
     font-size: 50px;
+    color: #50fa7b;
+}
+
+#menu3 h3{
+    font-size: 40px;
     color: #50fa7b;
 }
 
@@ -128,21 +125,54 @@ section {
     border-radius: 10px;
     align-items: center;
     background-color: #30313b;
-    padding: 20px;
-    margin: 20px;
     width: 350px;
     height: 400px;
-    transition: all 0.5s;
     -webkit-box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.25);
     -moz-box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.25);
     box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.25);
 }
 
-.card:hover{
-    transform: translateY(-5px);
+.separator{
+    margin: 40px;
+}
+
+.invisible-card{
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+    background-color: transparent;
+}
+
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
+}
+
+.flipper{
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+    position: relative;
+}
+
+
+.card-front, .card-back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back{
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: justify;
+	transform: rotateY(180deg);
 }
 
 .card img{
+    padding: 20px;
     align-items: center;
     max-width: 300px;
     max-height: 300px;
@@ -150,8 +180,8 @@ section {
 
 .card h2{
     color: #f8f8f2;
+    font-size: 15px;
 }
-
 
 #menu4 h1{
     padding-left: 25%;
@@ -160,7 +190,8 @@ section {
 }
 
 .card2{
-    
+    padding: 20px;
+    margin: 20px;
     cursor:pointer;
 }
 
