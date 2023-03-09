@@ -106,6 +106,10 @@ button:hover{
     height: auto;
 }
 
+#menu1{
+    background-color: #282a36;
+}
+
 #menu2 {
     display: inline-block;
 }
@@ -256,6 +260,26 @@ button:hover{
 
 .card2 button:hover{
     background-color: #bd93f9;
+}
+
+.footerSwish{
+    background-image: url(src/swish_solid.png);
+    width: 100%;
+    background-size: 100% 180px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 180px;
+    margin-top: -180px;
+}
+
+.startSwish{
+    background-image: url(src/reverse_swish_solid.png);
+    width: 100%;
+    background-size: 100% 180px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 180px;
+    margin-top: -180px;
 }
 
 footer{
